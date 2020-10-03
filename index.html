@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,600&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            margin: 0 auto;
+            height: 100%;
+        }
+        
+        @media (min-width: 350px) {
+            .wrapper {
+                height: 100vh;
+                width: 100vw;
+                display: grid;
+                place-items: center;
+            }
+            .main-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            .header {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 500px;
+                padding: 0px 25px;
+            }
+            .cards-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 25px;
+                max-width: 320px;
+                height: 160px;
+                margin: 25px 25px;
+                margin-bottom: 50px;
+                background-color: white;
+                border-radius: 10px;
+                border-top: 4px solid hsl(180, 62%, 55%);
+                box-shadow: 0px 10px 32px 1px hsl(227, 12%, 86%);
+            }
+            .title {
+                color: hsl(234, 12%, 34%);
+                font-weight: 200;
+                font-size: 24px;
+            }
+            .subtitle {
+                font-weight: 600;
+                font-size: 25px;
+                color: hsl(234, 12%, 34%);
+            }
+            p {
+                font-weight: 200;
+                font-size: 15px;
+                color: hsl(229, 6%, 66%);
+                margin: 0px;
+            }
+            .tool-name {
+                font-weight: 600;
+                font-size: 18px;
+                color: hsl(234, 12%, 34%);
+            }
+            .tool-description {
+                font-weight: 200;
+                font-size: 15px;
+                color: hsl(229, 6%, 66%);
+            }
+            .symbol {
+                margin-top: 25px;
+                align-self: flex-end;
+            }
+        }
+        
+        @media (min-width: 740px) and (max-width: 1109px) {
+            .card-4 {
+                position: absolute;
+                bottom: -115px;
+                left: 0px;
+            }
+        }
+        
+        @media (min-width: 1228px) {
+            .main-wrapper {
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="main-wrapper">
+            <div class="header">
+                <span class="title">Reliable, efficient delivery</span>
+                <span class="subtitle">Powered by Technology</span>
+                <P>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</P>
+
+            </div>
+            <div class="cards-wrapper">
+                <div style="border-top: 4px solid hsl(180, 62%, 55%);" class="card">
+                    <span class="tool-name">Supervisor</span>
+                    <span class="tool-description">Monitors activity to identify project roadblocks</span>
+                    <img class="symbol" src="./images/icon-supervisor.svg">
+                </div>
+                <div style="display: flex;flex-direction: column;" class="card23">
+                    <div style="border-top: 4px solid hsl(0, 78%, 62%);" class="card">
+                        <span class="tool-name">Team Builder</span>
+                        <span class="tool-description">Scans our talent network to create the optimal team for your project</span>
+                        <img class="symbol" src="./images/icon-team-builder.svg">
+                    </div>
+                    <div style="border-top: 4px solid hsl(34, 97%, 64%);" class="card">
+                        <span class="tool-name">Karma</span>
+                        <span class="tool-description"> Regularly evaluates our talent to ensure quality</span>
+                        <img class="symbol" src="./images/icon-karma.svg">
+                    </div>
+                </div>
+                <div class="card-4">
+                    <div style="border-top: 4px solid hsl(212, 86%, 64%);" class="card">
+                        <span class="tool-name">Calculator</span>
+                        <span class="tool-description">  Uses data from past projects to provide better delivery estimates</span>
+                        <img class="symbol" src="./images/icon-calculator.svg">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+<!-- 
+Reliable, efficient delivery
+  Powered by Technology
+
+  Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful
+
+  Supervisor
+  Monitors activity to identify project roadblocks
+
+  Team Builder
+  Scans our talent network to create the optimal team for your project
+
+  Karma
+  Regularly evaluates our talent to ensure quality
+
+  Calculator
+  Uses data from past projects to provide better delivery estimates -->
